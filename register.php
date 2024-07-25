@@ -1,0 +1,136 @@
+<?php/*
+require_once('register_conn.php')*/
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+<div>   
+    </div>
+    <section id="header">
+        <a href="index.php"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.php">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="Cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <li id="user"><a href="login.php"><i class="fas fa-user"></i></a></li>
+                <!-- <li id="user"><a href="register.php"><i class="fas fa-sign-in-alt icon"></i></a></li> -->
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    
+
+    <section id="page-header" class="contact-header">
+
+        <h2>#joinUs</h2>
+
+        <p>Become a part of the GREY community! </p>
+
+    </section>
+
+
+    <section id="form-details">
+
+        <form action="register_conn.php" method="POST">
+
+            <h2>Register</h2>
+            
+            <input type="text" class="form-control" id="login-name" name="name" placeholder="Name" required>
+            <input type="email" class="form-control" id="login-email" name="email" placeholder="Email" required>
+            <input type="password" class="form-control" id="register-password" name="register_password" placeholder="Password"
+                required>
+            <input type="password" class="form-control" id="register-conf-password" name="conf_register_password" placeholder="Re-Enter Password"
+                required>
+            <button type="submit" name="submit" class="normal">Create Account</button>
+            <br>
+            <span>Already have an account?<a href="login.php" target="_blank" rel="noopener noreferrer">Login</a></span>
+        </form>
+        </div>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){ //for SweetAlert
+            alert("Working!");
+        });
+    </script> -->
+    </section>
+
+    <footer class="section-p1">
+        <div class="col social">
+            <img style="width: 120px; height: 120px;" class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Adobe Towers, I-1A, City Centre, Sector : 25A, Noida-201301</p>
+            <p><strong>Phone:</strong> 1800-208-9898</p>
+            <p><strong>Hours:</strong> 9 AM - 6 PM, Mon - Sat</p>
+
+            <div id="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <!-- <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div> -->
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <!-- <a href="#">Delivery Information</a> -->
+            <a href="t&c.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="register.html">Sign Up</a>
+            <a href="login.html">Sign In</a>
+            <!-- <a href="cart.html">View Cart</a> -->
+            <a href="cart.html">My Wishlist</a>
+            <!-- <a href="#">Track My Order</a> -->
+            <!-- <a href="#">Help</a> -->
+        </div>
+        <!-- <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div> 
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>-->
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
