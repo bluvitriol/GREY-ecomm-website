@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_num_rows($result) == 1) {
         // Login successful
-        header('Location: index.php');
+        header('Location: index.html');
         exit;
     } else {
         // Login failed
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <script>
         alert("Email not registered");
         setTimeout(function() {
-            window.location.href = "register.php";
+            window.location.href = "register.html";
         },0);
         </script>
         <?php
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_num_rows($result) == 1) {
         // Login successful
-        header('Location: index.php');
+        header('Location: index.html');
         exit;
     } else {
         // Login failed
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <script>
         alert("Invalid email or password");
         setTimeout(function() {
-            window.location.href = "login.php";
+            window.location.href = "login.html";
         },0);
 
         </script>
@@ -90,7 +90,7 @@ $query="insert into login_info(email,password)
 values('$email','$pass')";
 
 mysqli_query($connect,$query);
-header('location:index.php');
+header('location:index.html');
 */
 
 

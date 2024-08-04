@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
             $stmtinsert->bind_param('ssss', $name, $email, $password, $conf_password);
             if($stmtinsert->execute()){
                 echo 'Successfully saved.';
-                header('Location: index.php');
+                header('Location: index.html');
         exit;
             } else {
                 echo 'Error saving data.';

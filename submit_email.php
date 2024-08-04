@@ -24,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
     ?>
         <script>
         setTimeout(function() {
-            window.location.href = "index.php";
+            window.location.href = "index.html";
         },0);
         </script>
         <?php
